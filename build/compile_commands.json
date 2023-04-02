@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/FinallyWork/build",
+  "command": "D:\\MingW\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\finallywork.dir\\main.cpp.obj -c D:\\FinallyWork\\main.cpp",
+  "file": "D:/FinallyWork/main.cpp",
+  "output": "CMakeFiles/finallywork.dir/main.cpp.obj"
+}
+]
