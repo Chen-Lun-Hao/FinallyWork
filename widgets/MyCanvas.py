@@ -30,7 +30,7 @@ class MyCanvas(QWidget):
         scale = self.setImage()#返回比例
         self.img = ri.letterbox_image(self.img, scale=scale)#缩放
         self.img = iv.pilimg_to_qtpixmap(self.img)#转为qpixmap
-
+        self.setTabletTracking(True)
         self.point = QPoint(0, 0)#当前角点
 
         self.initUI()
@@ -66,7 +66,9 @@ class MyCanvas(QWidget):
         self.pen.begin(self)
         self.pen.drawPixmap(self.point, self.img)#从point绘制图像
         self.pen.end()
-        
+    
+    def tabletEvent(self, a0: QTabletEvent) -> None:
+        return super().tabletEvent(a0)
 
     #鼠标点击事件
     def mousePressEvent(self, e):
