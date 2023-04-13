@@ -4,11 +4,12 @@ from PyQt5.QtCore import *
 
 class GraphicItem(QGraphicsPixmapItem):
 
-    def __init__(self, parent=None):#初始化
+    def __init__(self, parent=None, img=None):#初始化
         super().__init__(parent)
-        self.pix = QPixmap("Model.png")
-        self.width = self.pix.width()
-        self.height = self.pix.height()
+        self.parent = parent#其父控件
+        self.pix = QPixmap(img)#对应pixmap
+        self.width = self.pix.width()#宽
+        self.height = self.pix.height()#高
         self.setPixmap(self.pix)
         # self.setFlag(QGraphicsItem.ItemIsSelectable)
         # self.setFlag(QGraphicsItem.ItemIsMovable)

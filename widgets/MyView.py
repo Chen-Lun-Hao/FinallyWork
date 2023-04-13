@@ -2,7 +2,7 @@
 Description: 
 Author: Xiao
 Date: 2020-05-09 18:46:31
-LastEditTime: 2023-04-05 19:32:32
+LastEditTime: 2023-04-08 23:15:53
 LastEditors: Xiao
 '''
 from PyQt5.QtWidgets import QGraphicsView
@@ -10,7 +10,6 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPainter, QTabletEvent
 
 from MyItem import GraphicItem
-from edge import Edge
 
 
 class GraphicView(QGraphicsView):
@@ -18,12 +17,12 @@ class GraphicView(QGraphicsView):
     def __init__(self, graphic_scene, parent=None):
         super().__init__(parent)
 
-        self.gr_scene = graphic_scene
+        self.gr_scene = graphic_scene#设置scene
         self.parent = parent
 
         self.edge_enable = False
         self.drag_edge = None
-        self.setTabletTracking(True)
+        self.setTabletTracking(True)#监听数位板
         self.init_ui()
 
     def init_ui(self):
@@ -51,6 +50,9 @@ class GraphicView(QGraphicsView):
             self.scale(2,2)
         if event.key() == Qt.Key_E:
             self.edge_enable = ~self.edge_enable
+
+    def Mypen(self):
+        return self.pen#返回画笔
 
     def mousePressEvent(self, event):
         print(event.pos())
