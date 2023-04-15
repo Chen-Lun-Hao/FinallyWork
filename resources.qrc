@@ -1,0 +1,12 @@
+<!-- 放置资源文件路径 -->
+<!DOCTYPE RCC>
+<RCC>
+    <!-- prefix资源分组 alias资源别名-->
+    <qresource prefix="icons">
+        <file alias="Py2exe-GUI_icon">Resources/毕设.ico</file>
+        <!-- <file alias="Python_icon">Icons/Python_icon.ico</file> -->
+    </qresource>
+    <qresource prefix="images">
+        <file alias="About_Text">Resources/my.jpg</file>
+    </qresource>
+</RCC>
