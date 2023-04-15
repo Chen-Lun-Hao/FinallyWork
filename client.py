@@ -6,9 +6,9 @@ LastEditTime: 2023-03-01 13:41:08
 LastEditors: Xiao
 '''
 #项目主入口
-from PyQt5 import QtCore
+from PyQt6 import QtCore
 import sys
-from PyQt5.QtWidgets import QApplication
+from PyQt6.QtWidgets import QApplication
 
 from widgets.MyTitle import TitleWindow
 from settings import *
