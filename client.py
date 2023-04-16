@@ -10,9 +10,7 @@ from PyQt6 import QtCore
 import sys
 from PyQt6.QtWidgets import QApplication
 
-from widgets.MyTitle import TitleWindow
 from settings import *
-from ui.ImageHandleToCanvas import MyMian
 
 
 if __name__ == "__main__":

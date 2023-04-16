@@ -1,4 +1,9 @@
 <!-- 放置资源文件路径 -->
+<!-- 
+    rcc -g python -o resources.py resources.qrc
+    使用此语句转换qrc文件
+    并且使用将pyside6转为pyqt6
+ -->
 <!DOCTYPE RCC>
 <RCC>
     <!-- prefix资源分组 alias资源别名-->
