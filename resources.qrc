@@ -14,4 +14,10 @@
     <qresource prefix="images">
         <file alias="About_Text">Resources/my.jpg</file>
     </qresource>
+    <qresource prefix="Softwareicon">
+        <file alias="close">Resources/SoftwareIcon/close.png</file>
+        <file alias="min">Resources/SoftwareIcon/min.png</file>
+        <file alias="max">Resources/SoftwareIcon/max.png</file>
+        <file alias="None">Resources/SoftwareIcon/None.png</file>
+    </qresource>
 </RCC>
